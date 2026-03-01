@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@media (max-width: 2560px) {
+  main {
+    .contUm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #0f0f0f;
+      background: radial-gradient(
+        circle,
+        rgba(15, 15, 15, 1) 0%,
+        rgba(136, 136, 128, 0.92) 22%,
+        rgba(15, 15, 15, 1) 100%
+      );
+
+      .Logo {
+        max-width: 250px;
+        -webkit-animation: fade-in-bck 8s ease-in-out both;
+        animation: fade-in-bck 8s ease-in-out both;
+      }
+
+      .campText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .titText {
+          font-family: "DM Sans", sans-serif;
+          font-size: 35px;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-weight: 900;
+          padding: 15px;
+          -webkit-animation: tracking-in-contract-bck-bottom 5s
+            cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-contract-bck-bottom 5s
+            cubic-bezier(0.215, 0.61, 0.355, 1) both;
+        }
+        .pagText {
+          font-family: "DM Sans", sans-serif;
+          font-size: 18px;
+          max-width: 800px;
+          text-align: center;
+          font-weight: 500;
+          padding: 15px;
+          -webkit-animation: text-focus-in 5s
+            cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+          animation: text-focus-in 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        }
+      }
+
+      .campBut {
+        display: flex;
+        gap: 35px;
+        margin: 20px;
+
+        .btnAgendar {
+          font-family: "DM Sans", sans-serif;
+          font-size: 18px;
+          text-transform: uppercase;
+          background-color: #c8a96e;
+          color: #f0f0f0;
+          font-weight: 500;
+          padding: 15px 30px;
+          border: 2px solid #c8a96e;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #c8a96e;
+            color: #0f0f0f;
+            border-color: transparent;
+          }
+        }
+
+        .btnConhecer {
+          font-family: "DM Sans", sans-serif;
+          font-size: 18px;
+          text-transform: uppercase;
+          background-color: transparent;
+          color: #fff;
+          font-weight: 500;
+          padding: 15px 30px;
+          border: 2px solid #c8a96e;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #c8a96e;
+            color: #0f0f0f;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+
+    .contDois {
+      background: #141414;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .titServ {
+        font-family: "DM Sans", sans-serif;
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: #c8a96e;
+        font-weight: 900;
+        padding: 15px;
+        margin-top: 10px;
+      }
+
+      .textServ {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        color: #bfbfbf;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 15px;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 10px;
+        gap: 20px;
+
+        .cardUm,
+        .cardDois,
+        .cardTres {
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 16px;
+          padding: 32px;
+          width: 360px;
+          color: #fff;
+          transition: all 0.3s ease;
+          text-align: center;
+          &:hover {
+            transform: translateY(-6px);
+            border: 1px solid #c8a96e;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+          }
+
+          .titCardUm,
+          .titCardDois,
+          .titCardTres {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #c8a96e;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+
+          .servCardUm,
+          .servCardDois,
+          .servCardTres {
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .contTres {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background: #0f0f0f;
+
+      .titSobre {
+        font-family: "DM Sans", sans-serif;
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: #c8a96e;
+        font-weight: 900;
+        padding: 15px;
+        margin: 15px;
+      }
+
+      .campSobre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .campImg {
+          margin: 20px;
+          .imgSobre {
+            max-width: 400px;
+            border-radius: 50%;
+          }
+        }
+
+        .textSobreCont {
+          max-width: 500px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          .textSobre {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            color: #bfbfbf;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 10px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+    transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+    transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .contUm {
+      padding: 20px;
+      background: #0f0f0f;
+      background: radial-gradient(
+        circle,
+        rgba(15, 15, 15, 1) 0%,
+        rgba(136, 136, 128, 0.92) 80%,
+        rgba(15, 15, 15, 1) 100%
+      );
+
+      .Logo {
+        max-width: 160px;
+      }
+
+      .campText {
+        .titText {
+          font-size: 22px;
+          letter-spacing: 2px;
+          text-align: center;
+          padding: 10px;
+          color: #c8a96e;
+        }
+
+        .pagText {
+          font-size: 15px;
+          padding: 10px;
+          color: #fff;
+        }
+      }
+
+      .campBut {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px;
+        width: 100%;
+        align-items: center;
+
+        .btnAgendar,
+        .btnConhecer {
+          font-size: 15px;
+          padding: 12px 24px;
+          width: 80%;
+          text-align: center;
+          color: #000;
+        }
+      }
+    }
+
+    .contDois {
+      padding: 20px 10px;
+
+      .titServ {
+        font-size: 22px;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .textServ {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+
+        .cardUm,
+        .cardDois,
+        .cardTres {
+          width: 90%;
+          padding: 24px;
+        }
+      }
+    }
+
+    .contTres {
+      padding: 20px 10px;
+
+      .titSobre {
+        font-size: 22px;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .campSobre {
+        flex-direction: column;
+        align-items: center;
+
+        .campImg {
+          margin: 10px;
+
+          .imgSobre {
+            max-width: 240px;
+          }
+        }
+
+        .textSobreCont {
+          max-width: 90%;
+          padding: 0 10px;
+
+          .textSobre {
+            font-size: 15px;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}
