@@ -40,8 +40,6 @@ A plataforma BN Detailer foi criada com os seguintes objetivos:
 -   **Página Inicial** --- Apresentação dos serviços e chamada para ação
 -   **Header Responsivo** --- Navegação e identidade visual
 -   **Footer** --- Informações institucionais e links úteis
--   **Galeria de Imagens** --- Exibição de veículos e serviços
-    realizados
 -   **Componentização Modular** --- Estrutura reutilizável e escalável
 
 ------------------------------------------------------------------------
